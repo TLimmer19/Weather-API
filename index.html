@@ -18,79 +18,89 @@
         <h1>Weather Dashboard</h1>
     </header>
     <div class="row">
-        <div class="col-sm-4" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
             <h2>Search for a city</h2>
             <div class="row input-group input-group-lg"><input id="userInput" class="form-control" type="text" placeholder="houston"></div>
             <button type="button" class="btn btn-primary w-100" id="submitBtn">search</button>
         </div>
-        <div class="col-sm-8">col-sm-8
-
-
+        <div class="col-sm-10">
             <div class="row" id="day">
-                <h1 id="dayCity"></h1>
-                <h2 id="dayCurrent"></h2>
-                <h2 id="dayIcon"></h2>
-                <h2 id="dayTemp"></h2>
-                <h2 id="dayWind"></h2>
-                <h2 id="dayHumid"></h2>
-                <h2 id="dayUV"></h2>
+                <div class="col">
+                    <h1 id="dayCity"></h1>
+                    <h2 id="dayCurrent"></h2>
+                    <h2 id="dayIcon"></h2>
+                    <h1 id="text"></h1>
+                    <h2 id="dayTemp"></h2>
+                    <h2 id="dayWind"></h2>
+                    <h2 id="dayHumid"></h2>
+                    <h2 id="dayUV"></h2>
+                </div>
             </div>
 
             <h1>Five Day Forecast</h1>
             <div class="row" id="fiveDayWeather">
                 <!-- 1st card -->
-                <div class="card text-white">
-                    <div class="card-body">
-                        <h5 class="card-title fiveDayDate"></h5>
-                        <h5 class="card-title fiveDayPhoto"></h5>
-                        <h5 class="card-title fiveDayTemp"></h5>
-                        <h5 class="card-title fiveDayWind"></h5>
-                        <h5 class="card-title fiveDayHumidity"></h5>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fiveDayDate"></h5>
+                            <h5 class="card-title fiveDayPhoto"></h5>
+                            <h5 class="card-title fiveDayTemp"></h5>
+                            <h5 class="card-title fiveDayWind"></h5>
+                            <h5 class="card-title fiveDayHumidity"></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fiveDayDate"></h5>
+                            <h5 class="card-title fiveDayPhoto"></h5>
+                            <h5 class="card-title fiveDayTemp"></h5>
+                            <h5 class="card-title fiveDayWind"></h5>
+                            <h5 class="card-title fiveDayHumidity"></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fiveDayDate"></h5>
+                            <h5 class="card-title fiveDayPhoto"></h5>
+                            <h5 class="card-title fiveDayTemp"></h5>
+                            <h5 class="card-title fiveDayWind"></h5>
+                            <h5 class="card-title fiveDayHumidity"></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fiveDayDate"></h5>
+                            <h5 class="card-title fiveDayPhoto"></h5>
+                            <h5 class="card-title fiveDayTemp"></h5>
+                            <h5 class="card-title fiveDayWind"></h5>
+                            <h5 class="card-title fiveDayHumidity"></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5th card -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fiveDayDate"></h5>
+                            <h5 class="card-title fiveDayPhoto"></h5>
+                            <h5 class="card-title fiveDayTemp"></h5>
+                            <h5 class="card-title fiveDayWind"></h5>
+                            <h5 class="card-title fiveDayHumidity"></h5>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- 2nd card -->
-            <div class="card text-white">
-                <div class="card-body">
-                    <h5 class="card-title fiveDayDate"></h5>
-                    <h5 class="card-title fiveDayPhoto"></h5>
-                    <h5 class="card-title fiveDayTemp"></h5>
-                    <h5 class="card-title fiveDayWind"></h5>
-                    <h5 class="card-title fiveDayHumidity"></h5>
-                </div>
-            </div>
-            <!-- 3rd card -->
-            <div class="card text-white">
-                <div class="card-body">
-                    <h5 class="card-title fiveDayDate"></h5>
-                    <h5 class="card-title fiveDayPhoto"></h5>
-                    <h5 class="card-title fiveDayTemp"></h5>
-                    <h5 class="card-title fiveDayWind"></h5>
-                    <h5 class="card-title fiveDayHumidity"></h5>
-                </div>
-            </div>
-            <!-- 4th card -->
-            <div class="card text-white">
-                <div class="card-body">
-                    <h5 class="card-title fiveDayDate"></h5>
-                    <h5 class="card-title fiveDayPhoto"></h5>
-                    <h5 class="card-title fiveDayTemp"></h5>
-                    <h5 class="card-title fiveDayWind"></h5>
-                    <h5 class="card-title fiveDayHumidity"></h5>
-                </div>
-            </div>
-            <!-- 5th card -->
-            <div class="card text-white">
-                <div class="card-body">
-                    <h5 class="card-title fiveDayDate"></h5>
-                    <h5 class="card-title fiveDayPhoto"></h5>
-                    <h5 class="card-title fiveDayTemp"></h5>
-                    <h5 class="card-title fiveDayWind"></h5>
-                    <h5 class="card-title fiveDayHumidity"></h5>
-                </div>
-            </div>
 
-            <h1 id="text"></h1>
             <!-- jquery  -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <!-- moment.js  -->

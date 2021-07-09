@@ -40,8 +40,18 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + 
                 document.getElementById('dayHumid').textContent = data.current.humidity + " Humidity"
                 document.getElementById('dayUV').textContent = data.current.uvi + " UV"
                 document.getElementById('dayWind').textContent = data.current.wind_speed + " Wind"
-                document.getElementById('dayTemperature').textContent = data.current.temp + " Temperature"
+                    // document.getElementById('dayTemperature').textContent = data.current.temp + " Temperature"
 
+                var arrFiveTemp = document.querySelectorAll(".fiveDayTemp")
+                var arrFiveDates = document.querySelectorAll(".fiveDayDate")
+                for (i = 1; i <= 5; i++) {
+                    console.log(data.daily[i])
+                    console.log(arrFiveTemp[i - 1])
+                    var fiveDate = new Date(data.daily[i].dt * 1000)
+
+                    arrFiveDates[i - 1].textContent = fiveDate.toString().split('13:00:00')[0]
+                    arrFiveTemp[i - 1].textContent = data.daily[i].temp.day + " F"
+                }
             })
 
 
